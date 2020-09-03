@@ -1,0 +1,383 @@
+/* Logo Colors */
+.darkOrange {
+    fill: #e24d26;
+}
+.grayWhite{
+    fill: #eaeaea;
+}
+.lightOrange{
+    fill: #ef652a;
+}
+.white{
+    fill: #fff;
+}
+
+/* HTML Elements */
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Cousine', monospace;
+}
+
+/*Header*/
+.container{
+    display: grid;
+}
+
+svg{
+    display: block;
+    height: auto;
+    margin: 0 auto;
+    width: 28rem;
+}
+
+h1{
+    font-size: 4rem;
+    text-align: center;
+}
+
+h2{
+    background: #f0652a;
+    box-shadow: 1px 1px 1px #333;
+    font-size: 3rem;
+    margin: 0;
+    padding: 1rem;
+    position: relative;
+    width: 25vw;
+    top: -1rem;
+}
+
+h3{
+    font-size: 2.5rem;
+}
+
+/* Site Logo and Introduction */
+.siteLogo{
+    border-top: 5px solid #1371b6;
+    border-left: 5px solid #1371b6;
+    border-right: 5px solid #1371b6;
+    position: relative;
+}
+
+.siteLogo__introTextContainer{
+    background: #1371b6;
+    color: #FFF;
+    padding: 1rem;
+}
+
+.siteLogo__introText{
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Specialization */
+.container-specialization {
+    grid-gap: 1rem 1rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 0 1rem;
+
+    
+}
+
+.specialization__heading{
+    text-align: right;
+}
+
+.specialization__text{
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+/* Portfolio */
+.portfolio{
+    background: #eee;
+    padding-bottom: 1.2rem;
+}
+
+.portfolio img{
+    height: auto;
+    width: 100%;
+}
+
+.container-portfolio{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 2rem 2rem;
+    justify-items: center;
+    padding: 0 1rem;
+}
+
+.card{
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.card a{
+    color: #FFF;
+}
+
+.card:hover .card-info{
+    opacity: 1;
+}
+
+.card-info{
+    background-color: #1371b6;
+    bottom: 0;
+    color: #FFF;
+    font-size: 1.1rem;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    padding: 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: .5s ease;
+}
+
+.card:hover .card-info{
+    display: block;
+}
+
+.card-title h3{
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+/* Work History */
+.container-workHistory{
+    align-items: center;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 4fr;
+    margin-bottom: 86px;
+}
+
+.workHistory__job{
+    font-size: 1.2rem;
+    max-width: 720px;
+    padding: 1rem;
+}
+
+.workHistory__jobTitle{
+    font-size: 1.5rem;
+}
+
+.workHistory__jobTimePeriod,
+.workHistory__jobDescription{
+    font-size: 1.3rem;
+}
+
+.workHistory__jobDescription li{
+    list-style-type: square;
+}
+
+.workHistory__msuLogo{
+    fill: #18453b;
+    transform: rotate(-90deg);
+    width: 20rem;
+}
+
+.workHistory__cmuLogo{
+    fill: #6a0032;
+    transform: rotate(-90deg);
+    width: 15rem;
+}
+
+/* Education */
+.container-education{
+    color: #FFF;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    top: -86px;
+    z-index: -1;
+    background-image: linear-gradient(rgba(255,255,255,.15) 0%, rgba(255,255,255,.15)), url('../images/educationBG.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: -86px;
+    grid-gap: 1rem;
+
+}
+
+.education__description{
+    font-size: 2rem;
+    text-shadow: 1px 2px 2px #000;
+}
+
+.education__cmu,
+.education__baker{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    padding: 6rem 1rem 1rem;
+    text-align: center;
+    align-items: center;
+}
+
+.education__cmuLogo{
+    width: 20rem;
+    height: auto;
+}
+
+/* Contact */
+.contact{
+    background: #060606;
+    word-break: break-word;
+}
+
+.container-contact{
+    grid-gap: 1rem 1rem;
+    grid-template-columns: 1fr 2fr;
+
+}
+
+.contact__photo{
+    align-self: end;
+    bottom: -4px;
+    position: relative;
+}
+
+.contact__photo img{
+    height: auto;
+    width: 100%;
+    padding: 0 1rem 0 0;
+    border-radius: 0 300px 0 0;
+}
+
+.contact__info{
+    color: #FFF;
+    font-size: 2rem;
+    padding: 0 1rem;
+
+}
+
+.contact__info ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact__info a{
+    color: #34aadd;
+}
+
+/* Footer */
+footer{
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer__jeLogo{
+    width: 5rem;
+}
+
+.footer__text{
+    padding: 1rem;;
+}
+
+
+/* Media Queries */
+@media only screen and (max-width: 1500px) {
+    .container-portfolio{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width: 1250px) {
+    h2{
+        font-size: 2.5rem;
+        width: 40vw;
+    }
+    .container-portfolio{
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .contact__photo img{
+        border-radius: 0 200px 0 0;
+    }
+
+    .education__cmu,
+    .education__baker{
+        grid-template-columns: 1fr;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    .container-portfolio{
+        grid-template-columns: 1fr;
+    }
+
+    .container-education{
+        grid-template-columns: 1fr;
+        grid-gap: .5rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    svg{
+        width: 75%;
+    }
+
+    h2{
+        width: 80vw;
+    }
+    
+    .container-specialization {
+        grid-gap: 0;
+    }
+
+    .specialization__heading{
+       grid-column: 1/-1;
+       text-align: center;
+       justify-self: center;
+    }
+    
+    .specialization__text{
+        grid-column: 1/-1;
+        text-align: center;
+    }
+
+    .container-workHistory{
+        grid-template-columns: 1fr;
+    }
+
+    .workHistory__msuLogo,
+    .workHistory__cmuLogo{
+        transform: rotate(0deg);
+    }
+
+    .workHistory__msuLogo{
+        width: 15rem;
+    }
+
+    .workHistory__cmuLogo{
+        width: 10rem;
+    }
+
+    .container-education{
+        background-attachment: scroll;
+    }
+    
+    .education__cmuLogo{
+        width: 15rem;
+    }
+
+    .education__bakerLogo{
+        width: 15rem;
+    }
+
+    .container-contact{
+        grid-template-columns: 1fr;
+    }
+
+    .contact__photo{
+        grid-row: 2/3;
+    }
+
+    .contact__photo img{
+        border-radius: 0;
+        padding: 0;
+    }
+  }
