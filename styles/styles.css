@@ -121,7 +121,7 @@ h3{
 }
 
 .card:hover .card-info{
-    opacity: 1;
+    opacity: .95;
 }
 
 .card-info{
