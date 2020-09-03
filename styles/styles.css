@@ -137,6 +137,7 @@ h3{
     right: 0;
     top: 0;
     transition: .5s ease;
+    word-break: break-word;
 }
 
 .card:hover .card-info{
