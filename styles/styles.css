@@ -49,7 +49,7 @@ h2{
     position: relative;
     width: 25vw;
     top: -1rem;
-    left: -30vw
+    transform: translateX(-95%);
 }
 
 h3{
@@ -61,7 +61,7 @@ h3{
 }
 
 .slideIn.slid{
-    left: 0;
+    transform: translateX(0%);
 }
 
 /* Site Logo and Introduction */
@@ -165,7 +165,7 @@ h3{
     align-items: center;
     grid-gap: 1rem;
     grid-template-columns: 1fr 4fr;
-    margin-bottom: 86px;
+    padding-top: 1.2rem;
 }
 
 .workHistory__job{
