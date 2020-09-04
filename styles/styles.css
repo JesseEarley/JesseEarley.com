@@ -56,6 +56,7 @@ h3{
     font-size: 2.5rem;
 }
 
+/* Animation */
 .slideIn{
     transition: all 1s ease;
 }
@@ -64,12 +65,22 @@ h3{
     transform: translateX(0%);
 }
 
+@keyframes fadein{
+    from{ opacity: 0; }
+    to{ opacity: 1; }
+}
+
 /* Site Logo and Introduction */
 .siteLogo{
     border-top: 5px solid #1371b6;
     border-left: 5px solid #1371b6;
     border-right: 5px solid #1371b6;
     position: relative;
+}
+
+.siteLogo__jeLogo,
+.siteLogo__heading{
+    animation: fadein 2s;
 }
 
 .siteLogo__introTextContainer{
