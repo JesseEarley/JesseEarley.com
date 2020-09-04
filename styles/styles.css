@@ -72,15 +72,11 @@ h3{
 
 /* Site Logo and Introduction */
 .siteLogo{
+    animation: fadein 2s;
     border-top: 5px solid #1371b6;
     border-left: 5px solid #1371b6;
     border-right: 5px solid #1371b6;
     position: relative;
-}
-
-.siteLogo__jeLogo,
-.siteLogo__heading{
-    animation: fadein 2s;
 }
 
 .siteLogo__introTextContainer{
@@ -142,7 +138,9 @@ h3{
     color: #FFF;
 }
 
-.card:hover .card-info{
+.card:hover .card-info,
+.card:focus .card-info,
+.card-info:focus-within{
     opacity: .95;
 }
 
@@ -162,7 +160,8 @@ h3{
     word-break: break-word;
 }
 
-.card:hover .card-info{
+.card:hover .card-info,
+.card:focus .card-info{
     display: block;
 }
 
