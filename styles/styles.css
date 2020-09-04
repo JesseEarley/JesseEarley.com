@@ -49,10 +49,19 @@ h2{
     position: relative;
     width: 25vw;
     top: -1rem;
+    left: -30vw
 }
 
 h3{
     font-size: 2.5rem;
+}
+
+.slideIn{
+    transition: all 1s ease;
+}
+
+.slideIn.slid{
+    left: 0;
 }
 
 /* Site Logo and Introduction */
