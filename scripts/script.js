@@ -10,7 +10,6 @@ const appearOnScroll = new IntersectionObserver(function(entries, appearOnScroll
             return;
         }
         else{
-            console.log(entry.target);
             entry.target.classList.add('slid');
             appearOnScroll.unobserve(entry.target);
 
